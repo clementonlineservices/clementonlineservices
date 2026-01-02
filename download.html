@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Requested Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            margin: 0;
+        }
+
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1b5e20;
+        }
+
+        .downloads {
+            margin-top: 25px;
+            display: none;
+        }
+
+        .file-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        .file-box a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Download Your Requested Service</h1>
+    <p>Enter your request details to download your service</p>
+</header>
+
+<div class="container">
+    <label>Request ID or Email</label>
+    <input type="text" id="requestId" placeholder="e.g. REQ123 or email@example.com">
+
+    <button onclick="showDownloads()">Check Available Downloads</button>
+
+    <div class="downloads" id="downloadSection">
+        <h2>Your Files</h2>
+
+        <div class="file-box">
+            📄 Website Design Document  
+            <br>
+            <a href="downloads/website-design.pdf" download>Download File</a>
+        </div>
+
+        <div class="file-box">
+            🎨 Graphic Design Package  
+            <br>
+            <a href="downloads/graphic-design.zip" download>Download File</a>
+        </div>
+
+        <div class="file-box">
+            📝 Consultation Report  
+            <br>
+            <a href="downloads/consultation-report.pdf" download>Download File</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 Online Services Platform
+</footer>
+
+<script>
+    function showDownloads() {
+        const requestId = document.getElementById("requestId").value;
+
+        if (!requestId) {
+            alert("Please enter your Request ID or Email.");
+            return;
+        }
+
+        // Demo: Always show files
+        document.getElementById("downloadSection").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+css
+Copy code
+project-folder/
+ index.html          (service request page)
+ download.html       (download page)
+
+ downloads/
+     website-design.pdf
+     graphic-design.zip
+     consultation-report.pdf

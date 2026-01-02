@@ -1,0 +1,391 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request Service</title>
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+<h1>Request Service</h1>
+<form id="PaymentForm">
+<label>Your name:</label>
+<input type="text"name="names"required><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Services Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e88e5;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .payment-methods {
+            margin-top: 20px;
+        }
+
+        .payment-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        button {
+            background: #1e88e5;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+
+        .success {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 5px;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Services Request Portal</h1>
+    <p>Request services and make payment to the site owner</p>
+</header>
+
+<div class="container">
+    <h2>Service Request Form</h2>
+
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Enter your full name">
+
+    <label>Email Address</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label>Select Service</label>
+    <select id="service">
+        <option value="">-- Choose a Service --</option>
+        <option>Website Design</option>
+        <option>Graphic Design</option>
+        <option>Online Consultation</option>
+        <option>Content Writing</option>
+        <option><li>Form filling(e.g.Passport,NIDA)</li>
+<option>Schoo Registration</option>
+<option>CV & Document Editing</option>
+<option>Poster and Design SErvices</opton>
+<option>Online Booking Support</option>
+    </select>
+
+    <label>Service Description</label>
+    <textarea id="description" placeholder="Describe what you need..."></textarea>
+
+    <h2>Payment Method</h2>
+
+    <div class="payment-methods">
+        <div class="payment-box">
+            <strong>PayPal</strong><br>
+            Send payment to: <em>dcclement23@gmail.com.com</em>
+        </div>
+<p>for each service you pay 500RWF</p>
+        <div class="payment-box">
+            <strong>Mobile Money</strong><br>
+            Number: <em>+250796142885 <li>Form filling(e.g.Passport,NIDA)</li>
+<li>Schoo Registration</li>
+<li>CV & Document Editing</li>
+<li>Poster and Design SErvices</li>
+<li>Online Booking Support</li></em>
+ <li>Website Design</li>
+        <li>Graphic Design</li>
+        <li>Online Consultation</li>
+        <li>Content Writing</li>
+
+        </div>
+
+        <div class="payment-box">
+            <strong>Bank Transfer</strong><br>
+            Account Name: <em></em><br>
+            Mobile phone: <em></em><br>
+        </div>
+    </div>
+<label>Please copy and paste here confirmation message of payment from MTN or AIRTEL<label>
+<textarea placeholder="more details" required></textarea>
+    <button onclick="submitRequest()">Submit Request</button>
+
+    <div class="success" id="successMessage">
+        ✅ Your request has been submitted successfully!  
+        The site owner will contact you soon.
+    </div>
+</div>
+
+<footer>
+</footer>
+
+<script>
+    function submitRequest() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const service = document.getElementById("service").value;
+        const description = document.getElementById("description").value;
+
+        if (!name || !email || !service || !description) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // Simulate form submission
+        document.getElementById("successMessage").style.display = "block";
+
+        // Clear form
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("service").value = "";
+        document.getElementById("description").value = "";
+    }
+</script>
+
+</body>
+</html>
+
+    <meta charset="UTF-8">
+    <title>Download Requested Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            margin: 0;
+        }
+
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1b5e20;
+        }
+
+        .downloads {
+            margin-top: 25px;
+            display: none;
+        }
+
+        .file-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        .file-box a {
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Download Your Requested Service</h1>
+    <p>Enter your request details to download your service</p>
+</header>
+
+<div class="container">
+    <label>Request ID or Email</label>
+    <input type="text" id="requestId" placeholder="e.g. REQ123 or email@example.com">
+
+    <button onclick="showDownloads()">Check Available Downloads</button>
+
+    <div class="downloads" id="downloadSection">
+        <h2>Your Files</h2>
+
+        <div class="file-box">
+            📄 Website Design Document  
+            <br>
+            <a href="downloads/website-design.pdf" download>Download File</a>
+        </div>
+
+        <div class="file-box">
+            🎨 Graphic Design Package  
+            <br>
+            <a href="downloads/graphic-design.zip" download>Download File</a>
+        </div>
+
+        <div class="file-box">
+            📝 Schoo Registration  
+            <br>
+            <a href="downloads/Schoo Registration.pdf" download>Download File</a>
+        </div>
+ <div class="file-box">
+            📝 Consultation Report  
+            <br>
+            <a href="downloads/consultation report.pdf" download>Download File</a>
+        </div>
+ <div class="file-box">
+            📝 Form filling(e.g.Passport,NIDA)  
+            <br>
+            <a href="downloads/Form filling(e.g.Passport,NIDA).pdf" download>Download File</a>
+        </div>
+ <div class="file-box">
+            📝 CV & Document Editing  
+            <br>
+            <a href="downloads/CV & Document Editing.pdf" download>Download File</a>
+        </div>
+ <div class="file-box">
+            📝 Poster and Design SErvices  
+            <br>
+            <a href="downloads/Poster and Design SErvices.pdf" download>Download File</a>
+        </div>
+ <div class="file-box">
+            📝 Online Booking Support 
+            <br>
+            <a href="downloads/Online Booking Support.pdf" download>Download File</a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+</footer>
+
+<script>
+    function showDownloads() {
+        const requestId = document.getElementById("requestId").value;
+
+        if (!requestId) {
+            alert("Please enter your Request ID or Email.");
+            return;
+        }
+
+        // Demo: Always show files
+        document.getElementById("downloadSection").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
+css
+<script>
+document.getElementByid("paymentForm").addEventListener("submit,function"(e)
+e.preventDefault();//Donot send page
+const proof=document.getElementById("paymentProof").value;
+if(proof.length>10){//lower limits of words we accept
+document.getElementById("downloadSection").style.display="block";}else{
+alert("Please input full sms from MTN,Aitel")
+}
+});
+</script>
+<body>
+ © 2026 Online Services Platform
+</html>
